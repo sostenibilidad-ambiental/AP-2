@@ -733,11 +733,38 @@ details li a{font-size:15.5px}
   </div>
 </section>
 
-<footer class="gut">
+<footer class="gut creditos">
+  <style>
+    .creditos .in{max-width:var(--wide);padding-block:28px 30px;gap:12px}
+    .creditos .cr-t{font:600 12px var(--f-sans);text-transform:uppercase;letter-spacing:.12em;color:#fff;margin:0}
+    .creditos ul{list-style:none;margin:0;padding:0;columns:1;column-gap:36px;font:400 13px/1.45 var(--f-sans);color:var(--on-blue-2)}
+    @container (min-width:760px){.creditos ul{columns:2}}
+    .creditos li{break-inside:avoid;padding:5px 0}
+    .creditos li b{font-weight:700;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--lime);margin-right:6px}
+    .creditos li a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(164,223,203,.45)}
+    .creditos li a:hover{border-bottom-color:var(--lime)}
+    .creditos .pie{display:flex;justify-content:space-between;gap:6px 18px;flex-wrap:wrap;align-items:baseline;border-top:1px solid rgba(255,255,255,.15);padding-top:12px;font:400 12px/1.45 var(--f-sans);color:var(--on-blue-2)}
+    .creditos .pie p{margin:0;max-width:72ch;font-style:italic}
+    .creditos .pie nav{display:flex;gap:14px;font-weight:600}
+    .creditos .pie nav a{color:var(--lime);text-decoration:none}
+    .creditos .pie nav a:hover{text-decoration:underline}
+  </style>
   <div class="col in">
-    <strong>Créditos</strong>
-    <p>Datos: listados de áreas protegidas, humedales y áreas marino-costeras de Fundación Natura (17 mar 2026, A. Rodríguez), tabla de donaciones FIDECO de 1996 a 2026 y cifras de Natura de 2021 y 2026. Polígonos de áreas protegidas: Geoportal del Smithsonian Tropical Research Institute (STRI), capa Panamá AP 2025. Frases originales para esta historia.</p>
-    <p><a href="https://naturapanama.org" target="_blank" rel="noopener">naturapanama.org</a> · <a href="https://www.instagram.com/naturapma/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/naturapma" target="_blank" rel="noopener">Facebook</a></p>
+    <p class="cr-t">Fuentes y créditos</p>
+    <ul>
+      <li><b>Natura</b>Listados de áreas protegidas, humedales y áreas marino-costeras con trabajo de Fundación Natura, de 1996 a 2026. Fundación Natura, 17 de marzo de 2026.</li>
+      <li><b>Donaciones</b>Tabla de donaciones del Programa de Donaciones a Áreas Protegidas, de 1996 a 2026. Fondo FIDECO, administrado por Fundación Natura.</li>
+      <li><b>Mapa</b>Polígonos de áreas protegidas, capa Panamá AP 2025. Geoportal del Smithsonian Tropical Research Institute (STRI).</li>
+      <li><b>Superficie</b>Superficie terrestre y marina de cada área. Mapa del Sistema Nacional de Áreas Protegidas (SINAP), Ministerio de Ambiente.</li>
+      <li><b>Categorías</b>Resolución JD-09-94 del INRENARE, que crea el Sistema Nacional de Áreas Silvestres Protegidas y define sus categorías de manejo. Gaceta Oficial N.º 22,586, 25 de julio de 1994.</li>
+      <li><b>Canjes de deuda</b><a href="https://naturapanama.org/wp-content/uploads/2023/07/Sistematizacion-Fondo-Chagres.pdf" target="_blank" rel="noopener">Sistematización del fondo del PN Chagres</a> y <a href="https://naturapanama.org/wp-content/uploads/2023/07/Sistematizacion-Fondo-Darien.pdf" target="_blank" rel="noopener">del PN Darién</a>. Fundación Natura.</li>
+      <li><b>Video</b><a href="https://www.youtube.com/watch?v=PiHAnessaUE" target="_blank" rel="noopener">Productores que transforman la tierra y protegen el agua</a>. Proyecto financiado por el GEF, implementado por MiAMBIENTE con apoyo técnico de la FAO y ejecutado por CATHALAC y Fundación Natura.</li>
+      <li><b>Mapa interactivo</b><a href="https://experience.arcgis.com/experience/cb3e572f631c47a79a87270b3bd4b5f0/" target="_blank" rel="noopener">Áreas protegidas de Panamá</a>. Elaborado en ArcGIS Experience Builder (Esri) con datos de Fundación Natura.</li>
+    </ul>
+    <div class="pie">
+      <p>Los montos corresponden al Programa de Donaciones a Áreas Protegidas de FIDECO. Las donaciones de 2009 y 2010 vienen combinadas en la fuente.</p>
+      <nav aria-label="Fundación Natura"><a href="https://naturapanama.org" target="_blank" rel="noopener">naturapanama.org</a><a href="https://www.instagram.com/naturapma/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/naturapma" target="_blank" rel="noopener">Facebook</a></nav>
+    </div>
   </div>
 </footer>
 </div>
